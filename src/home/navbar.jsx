@@ -25,7 +25,7 @@ const Navbar = () => {
           sx={{
             color: 'black',
             '&:hover': {
-              backgroundColor: 'red',
+              backgroundColor: 'white',
               color: 'black',
               pointerEvents: 'none'
             },
