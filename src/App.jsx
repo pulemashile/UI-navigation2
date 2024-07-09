@@ -50,11 +50,15 @@ function App() {
             color: 'white',
             borderColor: 'black',
             backgroundColor: 'black',
+            borderRadius:"12px",
+            
             '&:hover': {
               backgroundColor: 'white',
               color: 'black',
+              
+
             
-            
+  
             },
           }}
         > 
