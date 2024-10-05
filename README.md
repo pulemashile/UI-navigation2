@@ -1,8 +1,22 @@
-# React + Vite
+tHIS is my navigation app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+run locally
 
-Currently, two official plugins are available:
+clone the project
+git clone https://github.com/pulemashile/UI-navigation2.git
+go to the project directory
+run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+run locally
+
+cd UI-navigation2
+
+install dependencies
+
+npm install
+
+start the react vite react server
+
+npm run dev
+
+then go to the server s directory
