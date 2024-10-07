@@ -33,25 +33,32 @@
   display: flex;
   gap: 10px;
 }
-.dropdownbutton{
+
+.dropdownbutton {
   height: 20px;
   object-fit: cover;
 }
-.top{
-  font-weight: bolder;
 
-}.container {
+.top {
+  font-weight: bolder;
+}
+
+.container {
   display: flex;
-  
+  justify-content: space-between;
 }
 
 .container div {
-  margin: 10px; /* Optional: Adjust spacing between items */
+  margin: 20px;
   transform: translateY(-60px);
+  transition: transform 0.3s; 
 }
 
 .container img {
-  max-width: 100%; /* Optional: Ensure images are responsive */
+  max-width: 100%; 
   height: auto;
 }
+
+.container div:hover {
+  transform: translateY(-50px)}
 
