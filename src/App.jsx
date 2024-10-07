@@ -25,13 +25,13 @@ function App() {
 
           {/* Text Grid Item */}
           <Grid item lg={7} xs={12} order={{ xs: 2, lg: 1 }}>
-            <Typography variant="h2" sx={{ fontWeight: "bolder", fontSize: { xs: '24px', lg: '36px' }, marginBlock: { xs: '16px', lg: '32px' } }}>
-              make remote work{" "}
-            </Typography>
+          <Typography variant="h2" sx={{ fontWeight: "bolder", fontSize: { xs: '28px', lg: '36px' },marginBottom:"20px", marginBlock: { xs: '10px', lg: '32px' } }}>
+  make remote work{" "}
+</Typography>
             <div>
               <Typography
                 variant="h6"
-                sx={{ fontSize: "18px", marginBlock: "40px", width: { xs: '100%', sm: '30vw' } }}
+                sx={{ fontSize: "20px", marginBlock: "40px", marginBottom:"20px", width: { xs: '100%', sm: '30vw' } }}
               >
                 get your team in sync, no matter your location. streamline processes, create team rituals and watch productivity roar
               </Typography>
@@ -56,12 +56,15 @@ function App() {
           </Grid>
         </Grid>
 
-        <div className="container">
-          <div><img src="./src/assets/images/client-databiz.svg" alt="Client Databiz" /></div>
+        
+          
+      
+        <div className="container" sx={{ position: 'absolute', top: 0 , left: 0, width: '100%' }}>
+  {/* Databiz pictures */}<div><img src="./src/assets/images/client-databiz.svg" alt="Client Databiz" /></div>
           <div><img src="./src/assets/images/client-audiophile.svg" alt="Client Audiophile" /></div>
           <div><img src="./src/assets/images/client-meet.svg" alt="Client Meet" /></div>
           <div><img src="./src/assets/images/client-maker.svg" alt="Client Maker" /></div>
-        </div>
+</div>
       </Container>
     </div>
   );
