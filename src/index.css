@@ -1,13 +1,3 @@
-
-.custombutton {
-  color: black;
-  border: 1px solid black;
-  background-color: white;
-}
-
-.custombutton:hover {
-  background-color: white;
-  color: black;
-  
-
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
