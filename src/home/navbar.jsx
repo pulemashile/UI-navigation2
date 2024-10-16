@@ -7,14 +7,13 @@ import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import { RiArrowDropDownLine } from "@remixicon/react";
 import Typography from "@mui/material/Typography";
 
+
 const Navbar = () => {
   return (
     <Container>
       <div className="navbar">
-        <div style={{ display: "flex", gap: '20px', alignItems: 'center' }}>
-          <div style={{ marginTop: '15px', marginRight: '35px' }}>
-            <img src="./src/assets/images/logo.svg" alt="Logo" />
-          </div>
+        <div className="map" style={{ display: "flex", gap: '20px', alignItems: 'center' }}>
+        
           <PopupState variant="popover" popupId="demo-popup-menu">
             {(popupState) => (
               <React.Fragment>
@@ -27,7 +26,7 @@ const Navbar = () => {
       backgroundColor: "white",
       color: "black",
     },
-    display: { xs: 'none', sm: 'block' }, // Hide on extra-small screens
+    display: { xs: 'block', sm: 'block' }, // Hide on extra-small screens
   }}
 >
   feature <RiArrowDropDownLine />
@@ -60,7 +59,7 @@ const Navbar = () => {
       backgroundColor: "white",
       color: "black",
     },
-    display: { xs: 'none', sm: 'block' }, // Hide on extra-small screens
+    display: { xs: 'block', sm: 'block' }, // Hide on extra-small screens
   }}
 >
   company <RiArrowDropDownLine />
@@ -75,7 +74,7 @@ const Navbar = () => {
             )}
           </PopupState>
           <Typography marginBlock={2} sx={{
-            color: "hsl(0, 0%, 41%)",display: { xs: 'none', sm: 'block' },
+            color: "hsl(0, 0%, 41%)",display: { xs: 'block', sm: 'block' },
           }}>careers</Typography>
           <Typography marginBlock={2} sx={{
             color: "hsl(0, 0%, 41%)",
@@ -85,42 +84,51 @@ const Navbar = () => {
               backgroundColor: "white",
               color: "black",
               pointerEvents: "none",
-            },display: { xs: 'none', sm: 'block' },
+            },display: { xs: 'block', sm: 'block' },
           }}>about</Typography>
 
+          
         </div>
+
         <div className="buttons">
-          <Button
-            type="submit"
-            sx={{
-              color: "hsl(0, 0%, 41%)",
-              "&:hover": {
-                backgroundColor: "white",
-                color: "black",
-                pointerEvents: "none",
-              },display: { xs: 'none', sm: 'block' },
-            }}
-          >
-            Login
-          </Button>
-          <Button
-            type="submit"
-            variant="outlined"
-            sx={{
-              color: "hsl(0, 0%, 41%)",
-              borderColor: "black",
-              backgroundColor: "white",
-              borderRadius: "12px",
-              "&:hover": {
-                backgroundColor: "white",
-                color: "black",
-                pointerEvents: "none",
-              },display: { xs: 'none', sm: 'block' },
-            }}
-          >
-            Register
-          </Button>
-        </div>
+                    <Button
+                      type="submit"
+                      sx={{
+                        color: "hsl(0, 0%, 41%)",
+                        "&:hover": {
+                          backgroundColor: "white",
+                          color: "black",
+                          pointerEvents: "none",
+                        },
+                        display: { xs: 'flex', sm: 'block' },
+                        flexDirection: { xs: 'column', sm: 'row' },
+                        alignItems: { xs: 'center', sm: 'flex-start' },
+                      }}
+                    >
+                      Login
+                    </Button>
+                    <Button
+                      type="submit"
+                      variant="outlined"
+                      sx={{
+                        color: "hsl(0, 0%, 41%)",
+                        borderColor: "black",
+                        backgroundColor: "white",
+                        borderRadius: "12px",
+                        "&:hover": {
+                          backgroundColor: "white",
+                          color: "black",
+                          pointerEvents: "none",
+                        },
+                        display: { xs: 'flex', sm: 'block' },
+                        flexDirection: { xs: 'column', sm: 'row' },
+                        alignItems: { xs: 'center', sm: 'flex-start' },
+                      }}
+                    >
+                      Register
+                    </Button>
+                  </div>
+       
       </div>
     </Container>
   );
