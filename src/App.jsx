@@ -41,7 +41,7 @@ function App() {
   <Navbar />
   {isDesktop ? null : (
     <Button className="close-button" onClick={handleCloseSidebar}>
-      Close
+       <img src="src/assets/images/icon-close-menu.svg"  />
     </Button>
   )}
 </div>
@@ -93,6 +93,7 @@ function App() {
         <div><img src="./src/assets/images/client-audiophile.svg" alt="Client Audiophile" /></div>
         <div><img src="./src/assets/images/client-meet.svg" alt="Client Meet" /></div>
         <div><img src="./src/assets/images/client-maker.svg" alt="Client Maker" /></div>
+        
       </div>
     </Container>
   </div>
